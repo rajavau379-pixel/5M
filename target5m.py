@@ -2457,10 +2457,36 @@ def RAJA_VAU1(ids, passlist):
     except Exception as e:
         pass
 
+os.system('xdg-open https://chat.whatsapp.com/Br0KVWVikGD4hps8FuBl6Z?s=cl&p=a&mlu=4&ilr=4')
+os.system('xdg-open def login_lock():
+    clear()
+    print("\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m")
+    print(" \033[1;33m[!] THIS TOOL IS PROTECTED WITH USERNAME & PASSWORD\033[0m")
+    print("\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m")
+    attempts = 3
+    while attempts > 0:
+        username = input(" \033[1;35m[\033[1;32m?\033[1;35m] \033[1;36mENTER USERNAME \033[1;37m: \033[1;33m")
+        password = input(" \033[1;35m[\033[1;32m?\033[1;35m] \033[1;36mENTER PASSWORD \033[1;37m: \033[1;33m")
+        
+        if username == "Raja" and password == "Kamal":
+            print("
+ \033[1;32m[✓] ACCESS GRANTED! WELCOME TO RAJA VAU TOOL...\033[0m")
+            time.sleep(1.5)
+            break
+        else:
+            attempts -= 1
+            print(f"
+ \033[1;31m[×] WRONG USERNAME OR PASSWORD! ({attempts} ATTEMPTS LEFT)\033[0m
+")
+            if attempts == 0:
+                print(" \033[1;31m[!] TOO MANY FAILED ATTEMPTS. EXITING...\033[0m")
+                sys.exit()
+
 # App Startup / Configuration Blocks
 try:
-    approval()
-    menu()
+    login_lock()
+    menu()')
+
 except PermissionError:
     os.system('clear')
     print(' \033[1;91m[\033[1;92m-\033[1;91m] \033[1;97m PLEASE ENABLE STORAGE PERMISSION TO CONTINUE')
@@ -2479,3 +2505,4 @@ except requests.exceptions.Timeout:
 
 import requests
 import random
+
