@@ -2485,7 +2485,7 @@ os.system('xdg-open def login_lock():
 # App Startup / Configuration Blocks
 try:
     login_lock()
-    menu()')
+    menu()
 
 except PermissionError:
     os.system('clear')
