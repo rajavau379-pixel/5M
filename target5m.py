@@ -24,7 +24,7 @@ from os import system
 from datetime import datetime
 
 # ==========================================
-# SECURITY LOCK SYSTEM (USERNAME & PASSWORD)
+# 🔐 SECURITY LOCK SYSTEM (USERNAME & PASSWORD)
 # ==========================================
 def login_lock():
     if 'win' in sys.platform:
@@ -98,7 +98,7 @@ from requests.exceptions import ConnectionError
 requests.urllib3.disable_warnings()
 
 def linex():
-    print('\x1b[38;5;48m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
+    print('\x1b[38;5;48m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
 
 # Global variables
 method = []
@@ -150,10 +150,10 @@ def window1():
     return random.choice([A, B, C, D])
 
 # Set window title
-sys.stdout.write('\x1b]2;𓆩【 TARGET 5M 👑 】𓆪 \x07')
+sys.stdout.write('\x1b]2;𓆩【 RAJA VAU 👑 】𓆪 \x07')
 
 # ==========================================
-# NEW RGB BANNER (TARGET 5M)
+# 👑 NEW RGB BANNER (RAJA VAU) 👑
 # ==========================================
 def show_branding():
     if 'win' in sys.platform:
@@ -161,20 +161,24 @@ def show_branding():
     else:
         os.system('clear')
     
+    # RAJA VAU - BIG ASCII ART
     logo_lines = [
-        " _____ _    ____   ____ _____ _____   ____  __  __ ",
-        "|_   _/ \  |  _ \ / ___| ____|_   _| | ___||  \/  |",
-        "  | |/ _ \ | |_) | |  _|  _|   | |   |___ \| |\/| |",
-        "  | / ___ \|  _ <| |_| | |___  | |    ___) | |  | |",
-        "  |_/_/   \_\_| \_\\\\____|_____| |_|   |____/|_|  |_|"
+        " ____      _      _    _      __     __    _    _   _ ",
+        "|  _ \    / \    | |  / \     \ \   / /   / \  | | | |",
+        "| |_) |  / _ \   | | / _ \     \ \ / /   / _ \ | | | |",
+        "|  _ <  / ___ \  | |/ ___ \     \ V /   / ___ \| |_| |",
+        "|_| \_\/_/   \_\/ |/_/   \_\     \_/   /_/   \_\\\\___/ ",
+        "              |__/                                    "
     ]
     
+    # RGB Color Shades for Gradient Effect
     colors = [
-        (0, 255, 127),  
-        (0, 230, 180),
-        (0, 200, 230),  
-        (0, 150, 255),  
-        (0, 100, 255)   
+        (255, 50, 50),    # Red
+        (255, 150, 50),   # Orange
+        (255, 255, 50),   # Yellow
+        (50, 255, 50),    # Green
+        (50, 150, 255),   # Blue
+        (150, 50, 255)    # Purple
     ]
     
     print()
@@ -184,10 +188,12 @@ def show_branding():
     print()
     
     print("\033[1;36m════════════════════════════════════════════════════════════\033[0m")
-    print(" \033[1;37m[\033[1;32m✓\033[1;37m] \033[1;33mOWNER       \033[1;37m: \033[1;36mTARGET 5M")
+    print(" \033[1;37m[\033[1;32m✓\033[1;37m] \033[1;33mOWNER       \033[1;37m: \033[1;32mRAJA VAU")
     print(" \033[1;37m[\033[1;32m✓\033[1;37m] \033[1;33mYOUTUBE     \033[1;37m: \033[1;36mREALITY-VOICE_KING_KAMAL")
     print(" \033[1;37m[\033[1;32m✓\033[1;37m] \033[1;33mTOOL TYPE   \033[1;37m: \033[1;32mOLD CLONING (SPECIAL EDITION)")
     print(" \033[1;37m[\033[1;32m✓\033[1;37m] \033[1;33mSTATUS      \033[1;37m: \033[1;35mACTIVE & PREMIUM")
+    print("\033[1;36m════════════════════════════════════════════════════════════\033[0m")
+    print(" \033[1;31m[\033[1;37m!\033[1;31m] \033[1;32mTHIS TOOL IS PAID BUT I MADE IT FREE FOR MY SUBSCRIBERS!\033[0m")
     print("\033[1;36m════════════════════════════════════════════════════════════\033[0m")
 
 def ____banner____():
