@@ -1204,7 +1204,7 @@ def pak():
                 passlist = [psx, ids]
 
             if mthd in ['1', '01']:
-                ERROR.submit(RAJA VAU1, ids, passlist)
+                ERROR.submit(RAJA_VAU1, ids, passlist)
             elif mthd in ['2', '02']:
                 ERROR.submit(ERROR2, ids, passlist)
             elif mthd in ['3', '03']:
@@ -1266,7 +1266,7 @@ def gmail():
             fs = first_name.lower()
             ls = last_name.lower()
             passlist = [fs + ls, fs + ' ' + ls, first_name + last_name, first_name + ' ' + last_name, fs + '123', fs + '786', fs + '12345', fs + '1122']
-            XD.submit(RAJA VAU1, ids, passlist)
+            XD.submit(RAJA_VAU1, ids, passlist)
             
     print('\033[1;37m')
     linex()
@@ -2396,7 +2396,7 @@ def api8(ids, names, passlist):
     except Exception as e:
         return None
 
-def RAJA VAU1(ids, passlist):
+def RAJA_VAU1(ids, passlist):
     global loop
     try:
         color = random.choice([P, M, H, K, B, U, O, N])
@@ -2453,7 +2453,7 @@ def RAJA VAU1(ids, passlist):
         loop += 1
     except requests.exceptions.ConnectionError:
         time.sleep(5)
-        RAJA VAU1(ids, passlist)
+        RAJA_VAU1(ids, passlist)
     except Exception as e:
         pass
 
